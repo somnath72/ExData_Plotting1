@@ -6,7 +6,7 @@
 ## All of them
 ############################################################################################
 rm(list=ls())
-setwd("D:/Nijer/Somnath/Somnath/Books_Pers/MISC - VERY USEFUL/Backed Up/COURSERA/JHDSS - John Hopkins Course/4 - Exploratory Data Analysis/Course Projects/Assignment 1")
+setwd("C:/Exploratory Data Analysis/Course Projects/Assignment 1")
 master_table <- read.table("household_power_consumption.txt", sep = ";", header = TRUE)
 master_table$Date <- as.Date(master_table$Date, format="%d/%m/%Y")
 days_in_feb <- master_table[(master_table$Date=="2007-02-01") | (master_table$Date=="2007-02-02"),]
